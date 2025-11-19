@@ -166,7 +166,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* Hero section */
+/* Hero section with video background */
 .hero {
   display: flex;
   align-items: center;
@@ -184,8 +184,16 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--accent) 100%);
   z-index: 0;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-overlay {
@@ -194,7 +202,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(123, 31, 162, 0.3) 0%, rgba(171, 71, 188, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(123, 31, 162, 0.8) 0%, rgba(171, 71, 188, 0.6) 100%);
   z-index: 1;
 }
 
@@ -956,67 +964,6 @@ footer {
   .timeline-content {
     max-width: none;
   }
-}
-
-/* Empowerment Section */
-.empowerment-section {
-  margin: var(--spacing-xxl) 0;
-  background: linear-gradient(135deg, var(--accent-light) 0%, #fff 100%);
-  padding: var(--spacing-xxl);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-}
-
-.empowerment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
-}
-
-.empowerment-card {
-  background: #fff;
-  padding: var(--spacing-xl);
-  border-radius: var(--radius);
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  border: 2px solid transparent;
-  transition: all var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-
-.empowerment-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--primary);
-}
-
-.empowerment-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-}
-
-.empowerment-card i {
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: var(--spacing-md);
-}
-
-.empowerment-card h3 {
-  color: var(--primary-dark);
-  margin-bottom: var(--spacing-sm);
-  font-size: 1.2rem;
-}
-
-.empowerment-card p {
-  color: var(--text);
-  line-height: 1.6;
-  font-size: 0.95rem;
 }
 
 /* Enhanced animations for magical feel */

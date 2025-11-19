@@ -97,8 +97,29 @@ document.querySelectorAll('.animate').forEach(el => {
     observer.observe(el);
 });
 
-// Initialize when DOM is loaded
+// Hero video functionality
 document.addEventListener('DOMContentLoaded', function() {
+    const heroVideo = document.querySelector('.hero-video');
+    
+    if (heroVideo) {
+        // Ensure video plays on load
+        heroVideo.play().catch(e => {
+            console.log('Video autoplay failed:', e);
+        });
+        
+        // Handle video loading
+        heroVideo.addEventListener('loadeddata', function() {
+            console.log('Hero video loaded successfully');
+        });
+        
+        // Handle video errors
+        heroVideo.addEventListener('error', function(e) {
+            console.log('Hero video error:', e);
+            // Fallback: hide video and show gradient background
+            heroVideo.style.display = 'none';
+        });
+    }
+    
     // Initialize quote carousel
     showQuote(0);
     
@@ -113,3 +134,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Add CSS class for visible animations
+const style = document.createElement('style');
+style.textContent = `
+    .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+document.head.appendChild(style);
