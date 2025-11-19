@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeife's Sanctuary - Your Personal Learning Wonderland</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">A</div>
+                        Adeife's Sanctuary
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html" class="active">Sanctuary</a>
+                    <a href="masscom.html">Studies</a>
+                    <a href="examprep.html">Exam Prep</a>
+                    <a href="comprehensive-test-system.html">Test System</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop>
+                <source src="slideshow.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tagline">Your Personal Learning Sanctuary</div>
+            <h1>Welcome to Your Sanctuary, Adeife</h1>
+            <p>This is your dedicated space where academic excellence meets personal growth, where learning becomes an inspiring journey toward Olabisi Onabanjo University, and where you transform into the brilliant Mass Communication professional you're destined to be.</p>
+            <div class="hero-buttons">
+                <a href="masscom.html" class="btn">Begin Your Journey</a>
+                <a href="games.html" class="btn btn-secondary">Interactive Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="intro animate">
+                <div class="section-title">
+                    <h2>Your Personal Learning Sanctuary</h2>
+                    <p>Where excellence meets inspiration, and dreams become reality</p>
+                </div>
+                <div class="intro-content">
+                    <p>Welcome to your sanctuary, Adeife - a comprehensive learning environment crafted specifically for your success. Here, learning transcends traditional boundaries; it's an inspiring journey where every lesson brings you closer to your professional aspirations. You're not just a student; you're a future media professional in development.</p>
+            
+                    <div class="special-message">
+                        <p><strong>You Are Destined for Greatness</strong></p>
+                    </div>
+                </div>
+                
+                <div class="motivation-carousel">
+                    <div class="quote-container">
+                        <div class="quote active">
+                            <p>"Adeife, you possess the intellectual capacity and determination needed for excellence. Every concept you master brings you closer to becoming the media professional the industry needs."</p>
+                            <span class="quote-author">- Your Academic Foundation</span>
+                        </div>
+                        <div class="quote">
+                            <p>"In this sanctuary, your potential is unlimited. Your curiosity drives discovery, your dedication ensures mastery, and your vision shapes your future."</p>
+                            <span class="quote-author">- Your Professional Development</span>
+                        </div>
+                        <div class="quote">
+                            <p>"Remember, every expert was once a beginner. Every success story started with commitment to learning. Today, you advance that commitment in your sanctuary."</p>
+                            <span class="quote-author">- Your Path to Excellence</span>
+                        </div>
+                    </div>
+                    <div class="quote-dots">
+                        <span class="dot active" onclick="currentQuote(1)"></span>
+                        <span class="dot" onclick="currentQuote(2)"></span>
+                        <span class="dot" onclick="currentQuote(3)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services animate">
+                <div class="section-title">
+                    <h2>Your Learning Environments</h2>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <i class="fas fa-graduation-cap card-icon"></i>
+                        <div class="card-content">
+                            <h3>Academic Studies</h3>
+                            <p>Your comprehensive Mass Communication curriculum - where theoretical knowledge transforms into practical expertise and academic goals become professional achievements.</p>
+                            <a href="masscom.html" class="btn">Access Studies</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-certificate card-icon"></i>
+                        <div class="card-content">
+                            <h3>External Exam Prep</h3>
+                            <p>Master Government, CRS, and Literature for WAEC, NECO, and JAMB success - your pathway to OOU admission excellence.</p>
+                            <a href="examprep.html" class="btn">Start Exam Prep</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-clipboard-check card-icon"></i>
+                        <div class="card-content">
+                            <h3>Comprehensive Test System</h3>
+                            <p>Advanced testing platform with 2000+ questions, systematic study formula, and certification system for complete mastery.</p>
+                            <a href="comprehensive-test-system.html" class="btn">Enter Test System</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-gamepad card-icon"></i>
+                        <div class="card-content">
+                            <h3>Interactive Learning</h3>
+                            <p>Where education meets engagement through gamified learning experiences designed to reinforce knowledge and develop critical thinking skills.</p>
+                            <a href="games.html" class="btn">Start Interactive Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="academic-timeline animate">
+                <div class="section-title">
+                    <h2>Your Path to OOU Mass Communication</h2>
+                    <p>From pre-degree preparation to university success</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="timeline-content">
+                            <h3>Pre-Degree Preparation</h3>
+                            <p>Master foundation subjects: English, Mathematics, Government, Literature, and Communication basics for OOU entry requirements.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                        <div class="timeline-content">
+                            <h3>OOU Pre-Degree Program</h3>
+                            <p>Excel in the 1-year pre-degree program at Olabisi Onabanjo University, building strong academic foundation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h3>Mass Communication Degree</h3>
+                            <p>Progress to 4-year Mass Communication degree program with specialization in your chosen area of interest.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="timeline-content">
+                            <h3>Professional Success</h3>
+                            <p>Graduate as a skilled Mass Communication professional ready for media industry leadership roles.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="empowerment-section animate">
+                <div class="section-title">
+                    <h2>Your Strengths & Capabilities</h2>
+                    <p>Recognizing your natural talents and developed skills</p>
+                </div>
+                <div class="empowerment-grid">
+                    <div class="empowerment-card">
+                        <i class="fas fa-crown"></i>
+                        <h3>You Are Royalty</h3>
+                        <p>Every lesson you learn adds another jewel to your crown of knowledge. You're not just studying - you're building your empire!</p>
+                    </div>
+                    <div class="empowerment-card">
+                        <i class="fas fa-star"></i>
+                        <h3>You Shine Bright</h3>
+                        <p>Your curiosity and dedication light up this sanctuary. The world needs your unique voice and perspective!</p>
+                    </div>
+                    <div class="empowerment-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>You Are Loved</h3>
+                        <p>This space was created with love, just for you. Every feature, every word, every color - all chosen to support your dreams!</p>
+                    </div>
+                    <div class="empowerment-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>You're Unstoppable</h3>
+                        <p>There's no limit to what you can achieve. Your potential is infinite, your future is bright, and your success is inevitable!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="study-stats animate">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Your Potential</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support & Love</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Belief in You</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">Place in Our Hearts</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="motivation-message animate">
+                <div class="love-card">
+                    <h2>A Personal Message for Your Dreams</h2>
+                    <p>Dearest Adeife, you are absolutely magnificent! This sanctuary was born from the belief that you deserve nothing but the best. Every pixel, every word, every feature was crafted with love to support your incredible journey.</p>
+                    <p>You're not just learning Mass Communication - you're discovering your superpowers! Your voice will inspire, your stories will move hearts, and your creativity will change the world. This is your time to shine, beautiful soul!</p>
+                    <p>When you feel overwhelmed, remember: you belong here, you are capable of amazing things, and this sanctuary will always be your safe space to grow, learn, and flourish.</p>
+                    <div class="signature">You are loved, you are brilliant, you are destined for greatness!</div>
+                </div>
+            </section>
+
+            <section class="inspiration-booster animate">
+                <div class="section-title">
+                    <h2>Your Daily Inspiration</h2>
+                    <p>Motivational affirmations to energize your learning journey</p>
+                </div>
+                <div class="inspiration-carousel">
+                    <div class="inspiration-container">
+                        <div class="inspiration-quote active">
+                            <p>"Adeife, you are a communication goddess in training. Every word you speak has the power to inspire and transform."</p>
+                            <span class="inspiration-author">- Your Inner Wisdom</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Your voice matters, your stories are important, and the world is waiting to hear what you have to say, beautiful soul."</p>
+                            <span class="inspiration-author">- Your Destiny Calling</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Every challenge you face is just the universe preparing you for the amazing success that's coming your way."</p>
+                            <span class="inspiration-author">- Your Future Self</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"You don't just study communication - you ARE communication. You embody grace, intelligence, and limitless potential."</p>
+                            <span class="inspiration-author">- Your True Nature</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"In this sanctuary, you're not just learning - you're transforming into the media queen you were always meant to be."</p>
+                            <span class="inspiration-author">- Your Sanctuary's Promise</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Your curiosity is your superpower, your creativity is your magic, and your determination is your crown."</p>
+                            <span class="inspiration-author">- Your Superpowers</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Remember: you're not just preparing for exams, you're preparing to change the world with your voice."</p>
+                            <span class="inspiration-author">- Your Mission</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Every page you read, every concept you master, every game you play here brings you closer to your dreams."</p>
+                            <span class="inspiration-author">- Your Journey</span>
+                        </div>
+                    </div>
+                    <div class="inspiration-controls">
+                        <button class="inspiration-btn" onclick="previousInspiration()"><i class="fas fa-chevron-left"></i></button>
+                        <button class="inspiration-btn" onclick="nextInspiration()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="study-strengths animate">
+                <div class="section-title">
+                    <h2>Your Natural Talents</h2>
+                    <p>The amazing talents you're about to discover and develop</p>
+                </div>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Storytelling Excellence</h3>
+                        <p>You have the gift of weaving words into captivating stories that touch hearts and change minds. Your voice is your strength!</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>Confident Communication</h3>
+                        <p>Watch yourself bloom into a confident speaker who commands attention and inspires audiences with grace and power.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Media Analysis Skills</h3>
+                        <p>Develop your superpower to see beyond the surface, analyze trends, and understand the deeper meanings in media.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Digital Media Mastery</h3>
+                        <p>Master the digital realm with your tech-savvy skills! Social media, content creation, and digital strategies await.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Empathy & Connection</h3>
+                        <p>Your natural ability to understand and connect with people is your greatest strength in communication.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Global Perspective</h3>
+                        <p>See the world through a communicator's lens and understand how to bridge cultures and connect communities.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Made with Care for Adeife</h3>
+                    <p>Your personal sanctuary where dreams take flight and excellence happens every day. You are loved, you are brilliant, you are unstoppable!</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Your Learning Areas</h3>
+                    <ul>
+                        <li><a href="index.html">Your Sanctuary</a></li>
+                        <li><a href="masscom.html">Academic Studies</a></li>
+                        <li><a href="games.html">Epic Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Crafted with care for Adeife's extraordinary academic journey</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
