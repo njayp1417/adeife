@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adeife's Sanctuary - Your Personal Learning Wonderland</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apology-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -40,8 +41,9 @@
 
     <section class="hero">
         <div class="hero-background">
-            <video autoplay muted loop>
+            <video autoplay muted loop class="hero-video">
                 <source src="slideshow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
             <div class="hero-overlay"></div>
         </div>
@@ -50,6 +52,11 @@
             <h1>Welcome to Your Sanctuary, Adeife</h1>
             <p>This is your dedicated space where academic excellence meets personal growth, where learning becomes an inspiring journey toward Olabisi Onabanjo University, and where you transform into the brilliant Mass Communication professional you're destined to be.</p>
             <div class="hero-buttons">
+                <button class="btn btn-apology" onclick="showApology()">
+                    <i class="fas fa-heart"></i>
+                    My Heart to Yours
+                    <span class="btn-glow"></span>
+                </button>
                 <a href="masscom.html" class="btn">Begin Your Journey</a>
                 <a href="games.html" class="btn btn-secondary">Epic Games</a>
                 <a href="examprep.html" class="btn btn-outline">Exam Prep</a>
@@ -315,6 +322,101 @@
         </div>
     </footer>
 
+    <!-- Apology Modal -->
+    <div id="apologyModal" class="apology-modal">
+        <div class="apology-content">
+            <div class="apology-close" onclick="closeApology()">&times;</div>
+            <div class="apology-header">
+                <div class="floating-hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1 class="apology-title">My Dearest Adeife</h1>
+                <div class="apology-subtitle">From the bottom of my heart</div>
+            </div>
+            
+            <div class="apology-body">
+                <div class="apology-message">
+                    <p class="main-message">My beautiful Adeife, I'm so deeply sorry for hurting you. You mean absolutely everything to me, and seeing you in pain because of something I did breaks my heart completely. You deserve to be treated with nothing but love, kindness, and respect, and I failed you. I'm truly, genuinely sorry.</p>
+                    
+                    <div class="love-declaration">
+                        <h3>Why I Love You So Much</h3>
+                        <div class="love-points">
+                            <div class="love-point">
+                                <i class="fas fa-star"></i>
+                                <span>Your smile lights up my entire world and makes everything better</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-heart"></i>
+                                <span>You have the most beautiful, caring heart I've ever known</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-sun"></i>
+                                <span>You bring warmth and joy into every moment we share</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-flower"></i>
+                                <span>Your kindness and grace inspire me to be a better person</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-rainbow"></i>
+                                <span>You make even ordinary days feel magical and special</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-dove"></i>
+                                <span>Your love gives me peace and makes me feel truly home</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promise-section">
+                        <h3>My Promise to You</h3>
+                        <p>I promise to love you better, to listen to your heart, to be more thoughtful with my words and actions. I promise to cherish you, protect your feelings, and never take your beautiful heart for granted again. You deserve all the love and happiness in the world, and I want to spend every day showing you just how precious you are to me.</p>
+                    </div>
+                    
+                    <div class="final-message">
+                        <p>Please forgive me, my love. I know I hurt you, and I'm so sorry. You are my heart, my best friend, my everything. I love you more than words could ever express, and I just want to hold you close and make everything right again. You are the most amazing person in my life.</p>
+                        <div class="signature">With all my love and deepest regret ❤️</div>
+                    </div>
+                </div>
+                
+                <div class="apology-actions">
+                    <button class="btn btn-forgive" onclick="showForgiveness()">
+                        <i class="fas fa-heart"></i>
+                        I Forgive You
+                    </button>
+                    <button class="btn btn-love" onclick="showLove()">
+                        <i class="fas fa-kiss"></i>
+                        I Love You Too
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="success-content">
+            <div class="success-animation">
+                <div class="heart-explosion">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <h2 id="successTitle">Thank You, My Love!</h2>
+            <p id="successMessage">Your love means everything to me. I promise to cherish and protect your heart always.</p>
+            <button class="btn btn-close" onclick="closeSuccess()">Close</button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script src="apology.js"></script>
 </body>
 </html>
