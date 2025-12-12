@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeife's Sanctuary - Your Personal Learning Wonderland</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apology-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">A</div>
+                        Adeife's Sanctuary
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html" class="active">Sanctuary</a>
+                    <a href="masscom.html">Studies</a>
+                    <a href="examprep.html">Exam Prep</a>
+                    <a href="comprehensive-test-system.html">Test System</a>
+                    <a href="games.html">Epic Games</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop class="hero-video">
+                <source src="slideshow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tagline">Your Personal Learning Sanctuary</div>
+            <h1>Welcome to Your Sanctuary, Adeife</h1>
+            <p>This is your dedicated space where academic excellence meets personal growth, where learning becomes an inspiring journey toward Olabisi Onabanjo University, and where you transform into the brilliant Mass Communication professional you're destined to be.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-apology" onclick="showApology()">
+                    <i class="fas fa-heart"></i>
+                    My Heart to Yours
+                    <span class="btn-glow"></span>
+                </button>
+                <a href="masscom.html" class="btn">Begin Your Journey</a>
+                <a href="games.html" class="btn btn-secondary">Epic Games</a>
+                <a href="examprep.html" class="btn btn-outline">Exam Prep</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="intro animate">
+                <div class="section-title">
+                    <h2>Your Personal Learning Sanctuary</h2>
+                    <p>Where excellence meets inspiration, and dreams become reality</p>
+                </div>
+                <div class="intro-content">
+                    <p>Welcome to your sanctuary, Adeife - a comprehensive learning environment crafted specifically for your success. Here, learning transcends traditional boundaries; it's an inspiring journey where every lesson brings you closer to your professional aspirations. You're not just a student; you're a future media professional in development.</p>
+            
+                    <div class="special-message">
+                        <p><strong>You Are Destined for Greatness</strong></p>
+                    </div>
+                </div>
+                
+                <div class="motivation-carousel">
+                    <div class="quote-container">
+                        <div class="quote active">
+                            <p>"Adeife, you possess the intellectual capacity and determination needed for excellence. Every concept you master brings you closer to becoming the media professional the industry needs."</p>
+                            <span class="quote-author">- Your Academic Foundation</span>
+                        </div>
+                        <div class="quote">
+                            <p>"In this sanctuary, your potential is unlimited. Your curiosity drives discovery, your dedication ensures mastery, and your vision shapes your future."</p>
+                            <span class="quote-author">- Your Professional Development</span>
+                        </div>
+                        <div class="quote">
+                            <p>"Remember, every expert was once a beginner. Every success story started with commitment to learning. Today, you advance that commitment in your sanctuary."</p>
+                            <span class="quote-author">- Your Path to Excellence</span>
+                        </div>
+                    </div>
+                    <div class="quote-dots">
+                        <span class="dot active" onclick="currentQuote(1)"></span>
+                        <span class="dot" onclick="currentQuote(2)"></span>
+                        <span class="dot" onclick="currentQuote(3)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services animate">
+                <div class="section-title">
+                    <h2>Your Learning Environments</h2>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <i class="fas fa-graduation-cap card-icon"></i>
+                        <div class="card-content">
+                            <h3>Academic Studies</h3>
+                            <p>Complete Mass Communication curriculum with comprehensive resources and study materials.</p>
+                            <a href="masscom.html" class="btn">Access Studies</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-certificate card-icon"></i>
+                        <div class="card-content">
+                            <h3>External Exam Prep</h3>
+                            <p>Master Government, CRS, and Literature for WAEC, NECO, and JAMB success.</p>
+                            <a href="examprep.html" class="btn">Start Exam Prep</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-clipboard-check card-icon"></i>
+                        <div class="card-content">
+                            <h3>Test System</h3>
+                            <p>Advanced testing platform with 2000+ questions and certification system.</p>
+                            <a href="comprehensive-test-system.html" class="btn">Enter Tests</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-gamepad card-icon"></i>
+                        <div class="card-content">
+                            <h3>Epic Games Universe</h3>
+                            <p>15,000+ questions across educational, mind-cracking, and spicy challenges.</p>
+                            <a href="games.html" class="btn">Enter Epic Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="academic-timeline animate">
+                <div class="section-title">
+                    <h2>Your Path to OOU Mass Communication</h2>
+                    <p>From pre-degree preparation to university success</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="timeline-content">
+                            <h3>Pre-Degree Preparation</h3>
+                            <p>Master foundation subjects for OOU entry requirements.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                        <div class="timeline-content">
+                            <h3>OOU Pre-Degree Program</h3>
+                            <p>Excel in the 1-year pre-degree program at Olabisi Onabanjo University.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h3>Mass Communication Degree</h3>
+                            <p>Progress to 4-year Mass Communication degree program.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="timeline-content">
+                            <h3>Professional Success</h3>
+                            <p>Graduate as a skilled Mass Communication professional.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="study-stats animate">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Your Potential</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support & Love</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Belief in You</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">Place in Our Hearts</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="motivation-message animate">
+                <div class="love-card">
+                    <h2>A Personal Message for Your Dreams</h2>
+                    <p>Dearest Adeife, you are absolutely magnificent! This sanctuary was born from the belief that you deserve nothing but the best. Every pixel, every word, every feature was crafted with love to support your incredible journey.</p>
+                    <p>You're not just learning Mass Communication - you're discovering your superpowers! Your voice will inspire, your stories will move hearts, and your creativity will change the world. This is your time to shine, beautiful soul!</p>
+                    <p>When you feel overwhelmed, remember: you belong here, you are capable of amazing things, and this sanctuary will always be your safe space to grow, learn, and flourish.</p>
+                    <div class="signature">You are loved, you are brilliant, you are destined for greatness!</div>
+                </div>
+            </section>
+
+            <section class="inspiration-booster animate">
+                <div class="section-title">
+                    <h2>Daily Inspiration for Excellence</h2>
+                    <p>Powerful quotes to fuel your academic journey</p>
+                </div>
+                <div class="inspiration-carousel">
+                    <div class="inspiration-container">
+                        <div class="inspiration-quote active">
+                            <p>"The way to get started is to quit talking and begin doing."</p>
+                            <span class="inspiration-author">- Walt Disney</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                            <span class="inspiration-author">- Winston Churchill</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Believe you can and you're halfway there."</p>
+                            <span class="inspiration-author">- Theodore Roosevelt</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                            <span class="inspiration-author">- Eleanor Roosevelt</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Your limitation—it's only your imagination."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Great things never come from comfort zones."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Success doesn't just find you. You have to go out and get it."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Do something today that your future self will thank you for."</p>
+                            <span class="inspiration-author">- Sean Patrick Flanery</span>
+                        </div>
+                    </div>
+                    <div class="inspiration-controls">
+                        <button class="inspiration-btn" onclick="previousInspiration()"><i class="fas fa-chevron-left"></i></button>
+                        <button class="inspiration-btn" onclick="nextInspiration()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="study-strengths animate">
+                <div class="section-title">
+                    <h2>Your Natural Talents</h2>
+                    <p>The amazing talents you're about to discover and develop</p>
+                </div>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Storytelling Excellence</h3>
+                        <p>You have the gift of weaving words into captivating stories that touch hearts and change minds.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>Confident Communication</h3>
+                        <p>Watch yourself bloom into a confident speaker who commands attention and inspires audiences.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Media Analysis Skills</h3>
+                        <p>Develop your superpower to see beyond the surface and understand deeper meanings in media.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Digital Media Mastery</h3>
+                        <p>Master the digital realm with your tech-savvy skills and creative content creation.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Empathy & Connection</h3>
+                        <p>Your natural ability to understand and connect with people is your greatest strength.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Global Perspective</h3>
+                        <p>See the world through a communicator's lens and bridge cultures through understanding.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Made with Care for Adeife</h3>
+                    <p>Your personal sanctuary where dreams take flight and excellence happens every day.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Sanctuary</a></li>
+                        <li><a href="masscom.html">Studies</a></li>
+                        <li><a href="examprep.html">Exam Prep</a></li>
+                        <li><a href="comprehensive-test-system.html">Test System</a></li>
+                        <li><a href="games.html">Epic Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Crafted with care for Adeife's extraordinary academic journey</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apology Modal -->
+    <div id="apologyModal" class="apology-modal">
+        <div class="apology-content">
+            <div class="apology-close" onclick="closeApology()">&times;</div>
+            <div class="apology-header">
+                <div class="floating-hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1 class="apology-title">My Dearest Adeife</h1>
+                <div class="apology-subtitle">From the bottom of my heart</div>
+            </div>
+            
+            <div class="apology-body">
+                <div class="apology-message">
+                    <p class="main-message">My beautiful Adeife, I'm so deeply sorry for hurting you. You mean absolutely everything to me, and seeing you in pain because of something I did breaks my heart completely. You deserve to be treated with nothing but love, kindness, and respect, and I failed you. I'm truly, genuinely sorry.</p>
+                    
+                    <div class="love-declaration">
+                        <h3>Why I Love You So Much</h3>
+                        <div class="love-points">
+                            <div class="love-point">
+                                <i class="fas fa-star"></i>
+                                <span>Your smile lights up my entire world and makes everything better</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-heart"></i>
+                                <span>You have the most beautiful, caring heart I've ever known</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-sun"></i>
+                                <span>You bring warmth and joy into every moment we share</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-flower"></i>
+                                <span>Your kindness and grace inspire me to be a better person</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-rainbow"></i>
+                                <span>You make even ordinary days feel magical and special</span>
+                            </div>
+                            <div class="love-point">
+                                <i class="fas fa-dove"></i>
+                                <span>Your love gives me peace and makes me feel truly home</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promise-section">
+                        <h3>My Promise to You</h3>
+                        <p>I promise to love you better, to listen to your heart, to be more thoughtful with my words and actions. I promise to cherish you, protect your feelings, and never take your beautiful heart for granted again. You deserve all the love and happiness in the world, and I want to spend every day showing you just how precious you are to me.</p>
+                    </div>
+                    
+                    <div class="final-message">
+                        <p>Please forgive me, my love. I know I hurt you, and I'm so sorry. You are my heart, my best friend, my everything. I love you more than words could ever express, and I just want to hold you close and make everything right again. You are the most amazing person in my life.</p>
+                        <div class="signature">With all my love and deepest regret ❤️</div>
+                    </div>
+                </div>
+                
+                <div class="apology-actions">
+                    <button class="btn btn-forgive" onclick="showForgiveness()">
+                        <i class="fas fa-heart"></i>
+                        I Forgive You
+                    </button>
+                    <button class="btn btn-love" onclick="showLove()">
+                        <i class="fas fa-kiss"></i>
+                        I Love You Too
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="success-content">
+            <div class="success-animation">
+                <div class="heart-explosion">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <h2 id="successTitle">Thank You, My Love!</h2>
+            <p id="successMessage">Your love means everything to me. I promise to cherish and protect your heart always.</p>
+            <button class="btn btn-close" onclick="closeSuccess()">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="apology.js"></script>
+</body>
+</html>

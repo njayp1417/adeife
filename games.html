@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Games Universe - Adeife's Sanctuary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">A</div>
+                        Adeife's Sanctuary
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html">Sanctuary</a>
+                    <a href="masscom.html">Studies</a>
+                    <a href="examprep.html">Exam Prep</a>
+                    <a href="comprehensive-test-system.html">Test System</a>
+                    <a href="games.html" class="active">Epic Games</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="games-hero">
+                <div class="section-title">
+                    <h2>Epic Games Universe</h2>
+                    <p>From educational mastery to mind-bending challenges and spicy adventures</p>
+                </div>
+                
+                <div class="learning-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalQuestions">15,000+</span>
+                        <span class="stat-label">Questions & Challenges</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="difficultyLevels">6</span>
+                        <span class="stat-label">Intensity Levels</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="subjects">25</span>
+                        <span class="stat-label">Game Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="gameTypes">50+</span>
+                        <span class="stat-label">Epic Game Types</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Universe Selection -->
+            <section class="game-universe-selection">
+                <div class="section-title">
+                    <h3>Choose Your Gaming Universe</h3>
+                    <p>Select your adventure: Educational mastery, mind-bending challenges, or spicy experiences</p>
+                </div>
+                
+                <div class="universe-grid">
+                    <div class="universe-card" data-universe="educational" onclick="selectUniverse('educational')">
+                        <div class="universe-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educational Galaxy</h4>
+                        <p>Master Mass Communication, Government, Literature & CRS</p>
+                        <div class="universe-stats">
+                            <span>8,000+ Questions</span>
+                            <span>Academic Excellence</span>
+                        </div>
+                    </div>
+                    
+                    <div class="universe-card" data-universe="mindcrack" onclick="selectUniverse('mindcrack')">
+                        <div class="universe-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Mind-Cracking Dimension</h4>
+                        <p>Logic puzzles, IQ challenges, and brain teasers</p>
+                        <div class="universe-stats">
+                            <span>5,000+ Challenges</span>
+                            <span>Mental Gymnastics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="universe-card spicy" data-universe="relationships" onclick="selectUniverse('relationships')">
+                        <div class="universe-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Spicy Relationships Zone</h4>
+                        <p>Love, dating, and relationship challenges</p>
+                        <div class="universe-stats">
+                            <span>2,000+ Scenarios</span>
+                            <span>Adults Only 18+</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Intensity Level Selection -->
+            <section class="intensity-selection" id="intensitySelection">
+                <div class="section-title">
+                    <h3>Select Your Intensity Level</h3>
+                    <p>From gentle warm-up to absolutely brutal challenges</p>
+                </div>
+                
+                <div class="intensity-grid">
+                    <div class="intensity-card" data-level="soft" onclick="selectIntensity('soft')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-feather"></i>
+                        </div>
+                        <h4>Soft & Gentle</h4>
+                        <p>Easy-going, relaxed challenges</p>
+                    </div>
+                    
+                    <div class="intensity-card" data-level="normal" onclick="selectIntensity('normal')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4>Normal Mode</h4>
+                        <p>Balanced difficulty for steady progress</p>
+                    </div>
+                    
+                    <div class="intensity-card" data-level="challenging" onclick="selectIntensity('challenging')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Challenging</h4>
+                        <p>Step up the heat with tougher questions</p>
+                    </div>
+                    
+                    <div class="intensity-card" data-level="spicy" onclick="selectIntensity('spicy')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h4>Spicy Hot</h4>
+                        <p>Intense challenges that push your limits</p>
+                    </div>
+                    
+                    <div class="intensity-card" data-level="brutal" onclick="selectIntensity('brutal')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <h4>Brutal Mode</h4>
+                        <p>Absolutely ruthless, no mercy given</p>
+                    </div>
+                    
+                    <div class="intensity-card" data-level="nasty" onclick="selectIntensity('nasty')">
+                        <div class="intensity-icon">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <h4>Nasty Beast</h4>
+                        <p>The ultimate test - only legends survive</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Categories -->
+            <section class="game-categories" id="gameCategories">
+                <div class="section-title">
+                    <h3>Epic Game Categories</h3>
+                    <p id="categoryDescription">Choose your universe first to unlock game categories</p>
+                </div>
+                
+                <div class="category-tabs" id="categoryTabs">
+                    <!-- Dynamic tabs based on selected universe -->
+                </div>
+
+                <!-- Educational Games -->
+                <div class="game-section" id="educationalGames">
+                    <div class="games-grid" id="educationalGrid">
+                        <!-- Educational games will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Mind-Cracking Games -->
+                <div class="game-section" id="mindcrackGames">
+                    <div class="games-grid" id="mindcrackGrid">
+                        <!-- Mind-cracking games will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Relationship Games -->
+                <div class="game-section" id="relationshipGames">
+                    <div class="games-grid" id="relationshipGrid">
+                        <!-- Relationship games will be populated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Interface -->
+            <section id="gameInterface" class="game-interface hidden">
+                <div class="game-header-bar">
+                    <div class="game-info">
+                        <h3 id="gameTitle">Game Title</h3>
+                        <span id="gameSubject">Subject Area</span>
+                    </div>
+                    <div class="game-controls">
+                        <div class="game-stats">
+                            <span id="currentScore">Score: 0</span>
+                            <span id="gameProgress">1/20</span>
+                            <span id="gameTimer">15:00</span>
+                        </div>
+                        <button class="close-game" onclick="closeGame()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="game-content" id="gameContent">
+                    <!-- Dynamic game content -->
+                </div>
+                
+                <div class="game-actions">
+                    <button class="game-btn secondary" id="prevBtn" onclick="previousQuestion()">Previous</button>
+                    <button class="game-btn primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+                    <button class="game-btn success" id="submitBtn" onclick="submitGame()">Submit</button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="gameResults" class="game-results hidden">
+                <div class="results-container">
+                    <div class="results-header">
+                        <div class="results-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Challenge Complete</h3>
+                        <p id="resultsMessage">Epic performance! You're becoming legendary.</p>
+                    </div>
+                    
+                    <div class="results-metrics">
+                        <div class="metric">
+                            <span class="metric-value" id="finalScore">85%</span>
+                            <span class="metric-label">Final Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="correctAnswers">17/20</span>
+                            <span class="metric-label">Correct Answers</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="timeSpent">12:34</span>
+                            <span class="metric-label">Time Spent</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="intensityLevel">Spicy</span>
+                            <span class="metric-label">Intensity Level</span>
+                        </div>
+                    </div>
+                    
+                    <div class="results-analysis">
+                        <h4>Performance Analysis</h4>
+                        <div class="analysis-grid" id="analysisGrid">
+                            <!-- Dynamic analysis content -->
+                        </div>
+                    </div>
+                    
+                    <div class="results-actions">
+                        <button class="btn primary" onclick="retryGame()">Try Again</button>
+                        <button class="btn secondary" onclick="selectNewGame()">New Game</button>
+                        <button class="btn outline" onclick="viewProgress()">View Progress</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Dashboard -->
+            <section class="progress-dashboard">
+                <div class="section-title">
+                    <h3>Your Epic Journey Progress</h3>
+                    <p>Track your legendary achievements across all gaming universes</p>
+                </div>
+                
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Overall Performance</h4>
+                        </div>
+                        <div class="progress-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="overallScore">78%</span>
+                                <span class="stat-label">Average Score</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="gamesCompleted">156</span>
+                                <span class="stat-label">Games Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <i class="fas fa-fire"></i>
+                            <h4>Epic Achievements</h4>
+                        </div>
+                        <div class="progress-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="badges">47</span>
+                                <span class="stat-label">Badges Earned</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="streak">23</span>
+                                <span class="stat-label">Day Streak</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <i class="fas fa-crown"></i>
+                            <h4>Legendary Status</h4>
+                        </div>
+                        <div class="progress-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="totalTime">127h</span>
+                                <span class="stat-label">Total Gaming Time</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="rank">Elite</span>
+                                <span class="stat-label">Current Rank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Epic Games Universe</h3>
+                    <p>The ultimate gaming platform combining education, mental challenges, and relationship adventures in one epic experience.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Sanctuary</a></li>
+                        <li><a href="masscom.html">Academic Studies</a></li>
+                        <li><a href="games.html">Epic Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Adeife's Epic Gaming Sanctuary - Where Legends Are Born</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html>

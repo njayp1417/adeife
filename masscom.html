@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeife's Mass Communication Studies - Pre-Degree Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="masscom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">A</div>
+                        Adeife
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html">Sanctuary</a>
+                    <a href="masscom.html" class="active">Studies</a>
+                    <a href="examprep.html">Exam Prep</a>
+                    <a href="comprehensive-test-system.html">Test System</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="masscom-hero">
+                <div class="section-title">
+                    <h2>Adeife's Mass Communication Excellence Hub</h2>
+                    <p>Your complete pre-degree learning journey to media mastery</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="examprep.html" class="btn">Exam Preparation</a>
+                    <a href="comprehensive-test-system.html" class="btn btn-outline">Test System</a>
+                    <a href="games.html" class="btn btn-secondary">Interactive Learning</a>
+                </div>
+                <div class="progress-tracker">
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-book-open"></i></div>
+                        <span>Foundation</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <span>Core Subjects</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-camera"></i></div>
+                        <span>Practical Skills</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span>University Ready</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Tabs -->
+            <div class="study-tabs">
+                <button class="tab-btn active" onclick="showTab('curriculum')">
+                    <i class="fas fa-list"></i> Curriculum
+                </button>
+                <button class="tab-btn" onclick="showTab('resources')">
+                    <i class="fas fa-book-open"></i> Resources
+                </button>
+                <button class="tab-btn" onclick="showTab('practice')">
+                    <i class="fas fa-pen"></i> Practice Tests
+                </button>
+                <button class="tab-btn" onclick="showTab('organizations')">
+                    <i class="fas fa-building"></i> Organizations
+                </button>
+                <button class="tab-btn" onclick="showTab('notes')">
+                    <i class="fas fa-sticky-note"></i> Study Notes
+                </button>
+            </div>
+
+            <!-- Curriculum Tab -->
+            <div id="curriculum" class="tab-content active">
+                <div class="curriculum-grid">
+                    <!-- Foundation Semester 1 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-seedling"></i> Foundation Semester 1</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Introduction to Mass Communication</h4>
+                                <ul>
+                                    <li>History of Mass Communication</li>
+                                    <li>Communication Models and Theories</li>
+                                    <li>Media and Society</li>
+                                    <li>Communication Process</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Video Lectures
+                                    </a>
+                                    <a href="#" class="resource-link">
+                                        <i class="fas fa-file-pdf"></i> Reading Materials
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>English Language & Communication</h4>
+                                <ul>
+                                    <li>Grammar and Syntax</li>
+                                    <li>Vocabulary Building</li>
+                                    <li>Writing Skills</li>
+                                    <li>Oral Communication</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.grammarly.com/blog/" target="_blank" class="resource-link">
+                                        <i class="fas fa-globe"></i> Grammar Resources
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="module">
+                                <h4>Computer Literacy</h4>
+                                <ul>
+                                    <li>Microsoft Office Suite</li>
+                                    <li>Internet Research Skills</li>
+                                    <li>Digital Communication Tools</li>
+                                    <li>Basic Graphic Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foundation Semester 2 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-newspaper"></i> Foundation Semester 2</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Introduction to Journalism</h4>
+                                <ul>
+                                    <li>News Writing Fundamentals</li>
+                                    <li>News Gathering Techniques</li>
+                                    <li>Interview Skills</li>
+                                    <li>Media Ethics</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.poynter.org/" target="_blank" class="resource-link">
+                                        <i class="fas fa-newspaper"></i> Poynter Institute
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Introduction to Broadcasting</h4>
+                                <ul>
+                                    <li>Radio Broadcasting Basics</li>
+                                    <li>Television Production</li>
+                                    <li>Script Writing</li>
+                                    <li>Voice and Diction</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Public Relations Fundamentals</h4>
+                                <ul>
+                                    <li>PR Principles and Practices</li>
+                                    <li>Corporate Communication</li>
+                                    <li>Crisis Communication</li>
+                                    <li>Event Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Semester 1 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-bullhorn"></i> Advanced Semester 1</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Advertising Principles</h4>
+                                <ul>
+                                    <li>Advertising Concepts</li>
+                                    <li>Creative Strategy</li>
+                                    <li>Media Planning</li>
+                                    <li>Consumer Behavior</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Digital Media & Social Networks</h4>
+                                <ul>
+                                    <li>Social Media Marketing</li>
+                                    <li>Content Creation</li>
+                                    <li>Digital Analytics</li>
+                                    <li>Online Community Management</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.hootsuite.com/resources" target="_blank" class="resource-link">
+                                        <i class="fab fa-twitter"></i> Social Media Resources
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Media Law & Ethics</h4>
+                                <ul>
+                                    <li>Communication Law</li>
+                                    <li>Copyright and Intellectual Property</li>
+                                    <li>Privacy Rights</li>
+                                    <li>Professional Ethics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Semester 2 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-video"></i> Advanced Semester 2</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Media Production</h4>
+                                <ul>
+                                    <li>Video Production</li>
+                                    <li>Audio Production</li>
+                                    <li>Photography</li>
+                                    <li>Editing Techniques</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Research Methods in Communication</h4>
+                                <ul>
+                                    <li>Quantitative Research</li>
+                                    <li>Qualitative Research</li>
+                                    <li>Survey Design</li>
+                                    <li>Data Analysis</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>International Communication</h4>
+                                <ul>
+                                    <li>Global Media Systems</li>
+                                    <li>Cross-Cultural Communication</li>
+                                    <li>International News Flow</li>
+                                    <li>Media Globalization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specialization Options -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-star"></i> Specialization Tracks</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Journalism Track</h4>
+                                <ul>
+                                    <li>Investigative Journalism</li>
+                                    <li>Feature Writing</li>
+                                    <li>Sports Journalism</li>
+                                    <li>Business Journalism</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Broadcasting Track</h4>
+                                <ul>
+                                    <li>News Anchoring</li>
+                                    <li>Documentary Production</li>
+                                    <li>Live Broadcasting</li>
+                                    <li>Program Development</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Digital Media Track</h4>
+                                <ul>
+                                    <li>Web Development</li>
+                                    <li>Mobile Media</li>
+                                    <li>Interactive Media</li>
+                                    <li>Digital Storytelling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <h3><i class="fas fa-book"></i> Essential Textbooks</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>Mass Communication Theory</h4>
+                                <p><strong>Mass Communication Theory: Foundations, Ferment, and Future</strong> by Stanley Baran & Dennis Davis</p>
+                                <a href="https://www.amazon.com/Mass-Communication-Theory-Foundations-Ferment/dp/1285052064" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>Journalism</h4>
+                                <p><strong>The Elements of Journalism</strong> by Bill Kovach & Tom Rosenstiel</p>
+                                <a href="https://www.amazon.com/Elements-Journalism-Revised-Updated-Edition/dp/0804136785" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>Public Relations</h4>
+                                <p><strong>Effective Public Relations</strong> by Scott Cutlip, Allen Center & Glen Broom</p>
+                                <a href="https://www.amazon.com/Effective-Public-Relations-11th-Edition/dp/0132720809" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>Advertising</h4>
+                                <p><strong>Contemporary Advertising and Integrated Marketing Communications</strong> by William Arens</p>
+                                <a href="https://www.amazon.com/Contemporary-Advertising-Integrated-Marketing-Communications/dp/0078028957" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3><i class="fab fa-youtube"></i> Video Learning</h3>
+                        <div class="video-grid">
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/AD7N-1Mj-DU" frameborder="0" allowfullscreen></iframe>
+                                <h4>Media Literacy Fundamentals</h4>
+                                <p>Essential skills for analyzing and evaluating media content</p>
+                            </div>
+                            <div class="video-item">
+                                <div class="video-placeholder">
+                                    <i class="fas fa-play-circle"></i>
+                                    <p>More videos coming soon</p>
+                                </div>
+                                <h4>Introduction to Mass Communication</h4>
+                                <p>Basic concepts and communication models</p>
+                            </div>
+                            <div class="video-item">
+                                <div class="video-placeholder">
+                                    <i class="fas fa-play-circle"></i>
+                                    <p>More videos coming soon</p>
+                                </div>
+                                <h4>Journalism Fundamentals</h4>
+                                <p>News writing and reporting basics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3><i class="fas fa-globe"></i> Online Resources</h3>
+                        <div class="link-grid">
+                            <a href="https://www.journalism.org/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-newspaper"></i>
+                                <h4>Pew Research Journalism</h4>
+                                <p>Research and analysis on journalism trends</p>
+                            </a>
+                            <a href="https://www.poynter.org/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Poynter Institute</h4>
+                                <p>Journalism education and training</p>
+                            </a>
+                            <a href="https://www.prsa.org/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-bullhorn"></i>
+                                <h4>PRSA</h4>
+                                <p>Public Relations Society of America</p>
+                            </a>
+                            <a href="https://www.aaf.org/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-ad"></i>
+                                <h4>American Advertising Federation</h4>
+                                <p>Advertising industry resources</p>
+                            </a>
+                            <a href="https://www.coursera.org/browse/arts-and-humanities/music-and-art" target="_blank" class="resource-link-card">
+                                <i class="fas fa-laptop"></i>
+                                <h4>Coursera</h4>
+                                <p>Online courses in communication</p>
+                            </a>
+                            <a href="https://www.edx.org/learn/communication" target="_blank" class="resource-link-card">
+                                <i class="fas fa-university"></i>
+                                <h4>edX</h4>
+                                <p>University-level communication courses</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3><i class="fas fa-tools"></i> Professional Tools</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <h4>Adobe Creative Suite</h4>
+                                <p>Industry-standard design and video editing tools</p>
+                                <a href="https://www.adobe.com/creativecloud.html" target="_blank" class="btn btn-sm">Learn More</a>
+                            </div>
+                            <div class="tool-item">
+                                <h4>Canva</h4>
+                                <p>Easy-to-use graphic design platform</p>
+                                <a href="https://www.canva.com/" target="_blank" class="btn btn-sm">Try Free</a>
+                            </div>
+                            <div class="tool-item">
+                                <h4>Hootsuite</h4>
+                                <p>Social media management platform</p>
+                                <a href="https://hootsuite.com/" target="_blank" class="btn btn-sm">Explore</a>
+                            </div>
+                            <div class="tool-item">
+                                <h4>Google Analytics</h4>
+                                <p>Web analytics and digital marketing insights</p>
+                                <a href="https://analytics.google.com/" target="_blank" class="btn btn-sm">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Tests Tab -->
+            <div id="practice" class="tab-content">
+                <div class="practice-section">
+                    <h3><i class="fas fa-clipboard-check"></i> Test Your Knowledge</h3>
+                    <div class="test-categories">
+                        <div class="difficulty-selector">
+                            <h4>Choose Your Subject Area:</h4>
+                            <div class="subject-buttons">
+                                <button class="subject-btn" onclick="startSubjectTest('journalism')">
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Journalism</span>
+                                    <small>News Writing & Ethics</small>
+                                </button>
+                                <button class="subject-btn" onclick="startSubjectTest('broadcasting')">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                    <span>Broadcasting</span>
+                                    <small>Radio & TV Production</small>
+                                </button>
+                                <button class="subject-btn" onclick="startSubjectTest('advertising')">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span>Advertising</span>
+                                    <small>Creative & Strategy</small>
+                                </button>
+                                <button class="subject-btn" onclick="startSubjectTest('pr')">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Public Relations</span>
+                                    <small>Corporate Communication</small>
+                                </button>
+                                <button class="subject-btn" onclick="startSubjectTest('digital')">
+                                    <i class="fas fa-laptop"></i>
+                                    <span>Digital Media</span>
+                                    <small>Social Media & Web</small>
+                                </button>
+                                <button class="subject-btn" onclick="startSubjectTest('theory')">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Communication Theory</span>
+                                    <small>Models & Concepts</small>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="test-info">
+                            <div class="info-card">
+                                <h5>Practice Test Format</h5>
+                                <ul>
+                                    <li>15 questions per subject test</li>
+                                    <li>Multiple choice and essay questions</li>
+                                    <li>Immediate feedback with explanations</li>
+                                    <li>Progress tracking across subjects</li>
+                                    <li>Unlimited practice attempts</li>
+                                    <li>Difficulty levels: Beginner to Advanced</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Interface -->
+                <div id="testInterface" class="test-interface hidden">
+                    <div class="test-header">
+                        <h3 id="testTitle">Mass Communication Test</h3>
+                        <div class="test-progress">
+                            <span id="questionNumber">1</span> of <span id="totalQuestions">15</span>
+                        </div>
+                        <div class="test-timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="timer">30:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-container">
+                        <div class="question" id="currentQuestion">
+                            Loading question...
+                        </div>
+                        
+                        <div class="answers" id="answerOptions">
+                            <!-- Answer options will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="test-controls">
+                            <button class="btn btn-outline" onclick="previousQuestion()">Previous</button>
+                            <button class="btn" onclick="nextQuestion()">Next</button>
+                            <button class="btn btn-secondary" onclick="submitTest()">Submit Test</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Results -->
+                <div id="testResults" class="test-results hidden">
+                    <div class="results-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Test Complete!</h3>
+                    </div>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="scorePercentage">88%</span>
+                        </div>
+                        <p>You scored <span id="correctAnswers">13</span> out of <span id="totalTestQuestions">15</span></p>
+                    </div>
+                    <div class="performance-breakdown">
+                        <h4>Performance Breakdown</h4>
+                        <div class="breakdown-item">
+                            <span>Correct Answers:</span>
+                            <span id="correctCount">13</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Incorrect Answers:</span>
+                            <span id="incorrectCount">2</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Time Taken:</span>
+                            <span id="timeTaken">22:15</span>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="retakeTest()">Retake Test</button>
+                    <button class="btn btn-outline" onclick="backToTests()">Back to Tests</button>
+                </div>
+            </div>
+
+            <!-- Organizations Tab -->
+            <div id="organizations" class="tab-content">
+                <div class="organizations-grid">
+                    <div class="org-category">
+                        <h3><i class="fas fa-university"></i> Target University - OOU</h3>
+                        <div class="org-list">
+                            <div class="org-item featured-university">
+                                <h4>Olabisi Onabanjo University (OOU) - Mass Communication</h4>
+                                <p><strong>Your Target Institution:</strong> Excellent Mass Communication program in Ogun State with modern facilities and experienced faculty</p>
+                                <div class="university-details">
+                                    <p><strong>Location:</strong> Ago-Iwoye, Ogun State</p>
+                                    <p><strong>Pre-Degree Duration:</strong> 1 Year</p>
+                                    <p><strong>Entry Requirements:</strong> 5 O'Level credits including English & Mathematics</p>
+                                </div>
+                                <a href="https://www.oouagoiwoye.edu.ng/" target="_blank" class="btn btn-sm">Visit OOU Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>OOU Mass Communication Department</h4>
+                                <p>Well-equipped department with radio/TV studios, computer labs, and experienced lecturers</p>
+                                <a href="https://www.oouagoiwoye.edu.ng/" target="_blank" class="btn btn-sm">Department Info</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Alternative Universities</h4>
+                                <p>University of Lagos (UNILAG), Covenant University, Babcock University - backup options</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-category">
+                        <h3><i class="fas fa-newspaper"></i> Professional Bodies</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>Nigerian Institute of Journalism (NIJ)</h4>
+                                <p>Premier journalism training institute</p>
+                                <a href="https://www.nij.edu.ng/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Nigerian Union of Journalists (NUJ)</h4>
+                                <p>Professional body for journalists in Nigeria</p>
+                                <a href="https://nuj.org.ng/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Advertising Practitioners Council of Nigeria (APCON)</h4>
+                                <p>Regulatory body for advertising in Nigeria</p>
+                                <a href="https://www.apcon.gov.ng/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-category">
+                        <h3><i class="fas fa-broadcast-tower"></i> Media Organizations</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>Nigerian Television Authority (NTA)</h4>
+                                <p>National television broadcaster</p>
+                                <a href="https://www.nta.ng/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Federal Radio Corporation of Nigeria (FRCN)</h4>
+                                <p>National radio broadcaster</p>
+                                <a href="https://www.radionigeriaabuja.gov.ng/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Channels Television</h4>
+                                <p>Leading private television station</p>
+                                <a href="https://www.channelstv.com/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-category">
+                        <h3><i class="fas fa-globe"></i> International Resources</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>BBC Academy</h4>
+                                <p>World-class journalism training resources</p>
+                                <a href="https://www.bbc.co.uk/academy" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Reuters Institute</h4>
+                                <p>Digital news and journalism research</p>
+                                <a href="https://reutersinstitute.politics.ox.ac.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Knight Center for Journalism</h4>
+                                <p>Free online journalism courses</p>
+                                <a href="https://knightcenter.utexas.edu/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Study Notes Tab -->
+            <div id="notes" class="tab-content">
+                <div class="notes-section">
+                    <h3><i class="fas fa-sticky-note"></i> Comprehensive Study Notes</h3>
+                    
+                    <div class="notes-categories">
+                        <div class="notes-category">
+                            <h4><i class="fas fa-newspaper"></i> Journalism Notes</h4>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <h5>News Writing Structure</h5>
+                                    <div class="note-content">
+                                        <p><strong>The Inverted Pyramid:</strong></p>
+                                        <ul>
+                                            <li><strong>Lead:</strong> Most important information (Who, What, When, Where, Why, How)</li>
+                                            <li><strong>Body:</strong> Supporting details in order of importance</li>
+                                            <li><strong>Tail:</strong> Least important information</li>
+                                        </ul>
+                                        <p><strong>Key Elements of a Good Lead:</strong></p>
+                                        <ul>
+                                            <li>Answers the 5 W's and H</li>
+                                            <li>25-35 words maximum</li>
+                                            <li>Active voice preferred</li>
+                                            <li>Present tense for recent events</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="note-item">
+                                    <h5>Interview Techniques</h5>
+                                    <div class="note-content">
+                                        <p><strong>Preparation:</strong></p>
+                                        <ul>
+                                            <li>Research your subject thoroughly</li>
+                                            <li>Prepare open-ended questions</li>
+                                            <li>Set up recording equipment</li>
+                                            <li>Choose appropriate location</li>
+                                        </ul>
+                                        <p><strong>During the Interview:</strong></p>
+                                        <ul>
+                                            <li>Listen actively</li>
+                                            <li>Ask follow-up questions</li>
+                                            <li>Take notes even when recording</li>
+                                            <li>Maintain eye contact</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notes-category">
+                            <h4><i class="fas fa-broadcast-tower"></i> Broadcasting Notes</h4>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <h5>Radio Production Basics</h5>
+                                    <div class="note-content">
+                                        <p><strong>Elements of Radio:</strong></p>
+                                        <ul>
+                                            <li><strong>Voice:</strong> Clear articulation, proper pace</li>
+                                            <li><strong>Music:</strong> Background, transitions, themes</li>
+                                            <li><strong>Sound Effects:</strong> Atmosphere, emphasis</li>
+                                            <li><strong>Silence:</strong> Dramatic effect, emphasis</li>
+                                        </ul>
+                                        <p><strong>Script Writing Tips:</strong></p>
+                                        <ul>
+                                            <li>Write for the ear, not the eye</li>
+                                            <li>Use conversational language</li>
+                                            <li>Include pronunciation guides</li>
+                                            <li>Time your scripts accurately</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notes-category">
+                            <h4><i class="fas fa-bullhorn"></i> Advertising Notes</h4>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <h5>AIDA Model</h5>
+                                    <div class="note-content">
+                                        <p><strong>A - Attention:</strong> Grab the audience's attention</p>
+                                        <p><strong>I - Interest:</strong> Generate interest in the product/service</p>
+                                        <p><strong>D - Desire:</strong> Create desire for the product/service</p>
+                                        <p><strong>A - Action:</strong> Motivate the audience to take action</p>
+                                        
+                                        <p><strong>Creative Strategy Elements:</strong></p>
+                                        <ul>
+                                            <li>Target audience identification</li>
+                                            <li>Unique selling proposition (USP)</li>
+                                            <li>Brand positioning</li>
+                                            <li>Message strategy</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notes-category">
+                            <h4><i class="fas fa-handshake"></i> Public Relations Notes</h4>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <h5>PR Campaign Planning</h5>
+                                    <div class="note-content">
+                                        <p><strong>RACE Model:</strong></p>
+                                        <ul>
+                                            <li><strong>Research:</strong> Situation analysis, audience research</li>
+                                            <li><strong>Action:</strong> Strategy development, planning</li>
+                                            <li><strong>Communication:</strong> Message delivery, media relations</li>
+                                            <li><strong>Evaluation:</strong> Measuring results, feedback</li>
+                                        </ul>
+                                        <p><strong>Key PR Tools:</strong></p>
+                                        <ul>
+                                            <li>Press releases</li>
+                                            <li>Media kits</li>
+                                            <li>Press conferences</li>
+                                            <li>Special events</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notes-category">
+                            <h4><i class="fas fa-brain"></i> Communication Theory Notes</h4>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <h5>Major Communication Models</h5>
+                                    <div class="note-content">
+                                        <p><strong>Shannon-Weaver Model:</strong></p>
+                                        <p>Information Source → Transmitter → Channel → Receiver → Destination</p>
+                                        
+                                        <p><strong>Berlo's SMCR Model:</strong></p>
+                                        <ul>
+                                            <li><strong>S - Source:</strong> Communication skills, attitudes, knowledge</li>
+                                            <li><strong>M - Message:</strong> Elements, structure, content, treatment</li>
+                                            <li><strong>C - Channel:</strong> Seeing, hearing, touching, smelling, tasting</li>
+                                            <li><strong>R - Receiver:</strong> Communication skills, attitudes, knowledge</li>
+                                        </ul>
+                                        
+                                        <p><strong>Agenda Setting Theory:</strong></p>
+                                        <p>Media doesn't tell us what to think, but what to think about.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Your Academic Journey</h3>
+                    <p>Supporting Adeife's dream of becoming an excellent Mass Communication professional.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="masscom.html">Mass Com Studies</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Made for Adeife's Academic Excellence 🎓</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="masscom.js"></script>
+</body>
+</html>

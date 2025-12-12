@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Exam Preparation - Adeife's Sanctuary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="examprep.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">A</div>
+                        Adeife's Sanctuary
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html">Sanctuary</a>
+                    <a href="masscom.html">Studies</a>
+                    <a href="examprep.html" class="active">Exam Prep</a>
+                    <a href="comprehensive-test-system.html">Test System</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="examprep-hero">
+                <div class="section-title">
+                    <h2>External Exam Preparation Hub</h2>
+                    <p>Master Government, CRS, and Literature for WAEC, NECO, and JAMB Excellence</p>
+                </div>
+                <div class="exam-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-content">
+                            <h3>3 Core Subjects</h3>
+                            <p>Government, CRS, Literature</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-content">
+                            <h3>All Exam Bodies</h3>
+                            <p>WAEC, NECO, JAMB Ready</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-content">
+                            <h3>OOU Preparation</h3>
+                            <p>Pre-degree Requirements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="masscom.html" class="btn">Mass Communication</a>
+                    <a href="comprehensive-test-system.html" class="btn btn-outline">Test System</a>
+                    <a href="games.html" class="btn btn-secondary">Interactive Learning</a>
+                </div>
+            </section>
+
+            <!-- Subject Navigation Tabs -->
+            <div class="subject-tabs">
+                <button class="subject-tab active" onclick="showSubject('government')">
+                    <i class="fas fa-landmark"></i> Government
+                </button>
+                <button class="subject-tab" onclick="showSubject('crs')">
+                    <i class="fas fa-cross"></i> Christian Religious Studies
+                </button>
+                <button class="subject-tab" onclick="showSubject('literature')">
+                    <i class="fas fa-book"></i> Literature in English
+                </button>
+            </div>
+
+            <!-- Government Section -->
+            <div id="government" class="subject-content active">
+                <div class="subject-header">
+                    <h2><i class="fas fa-landmark"></i> Government Studies</h2>
+                    <p>Master Nigerian and comparative government for external examinations</p>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Curriculum Overview -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-list"></i> Curriculum Overview</h3>
+                        <div class="topic-list">
+                            <div class="topic-category">
+                                <h4>Nigerian Government</h4>
+                                <ul>
+                                    <li>Constitutional Development (1914-1999)</li>
+                                    <li>Federal System of Government</li>
+                                    <li>Executive, Legislative, Judicial Arms</li>
+                                    <li>Local Government Administration</li>
+                                    <li>Political Parties and Elections</li>
+                                    <li>Citizenship and Fundamental Rights</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>Comparative Government</h4>
+                                <ul>
+                                    <li>British Parliamentary System</li>
+                                    <li>American Presidential System</li>
+                                    <li>French System of Government</li>
+                                    <li>International Organizations (UN, AU, ECOWAS)</li>
+                                    <li>Democracy and Democratization</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>Political Concepts</h4>
+                                <ul>
+                                    <li>Power, Authority, and Legitimacy</li>
+                                    <li>Political Culture and Socialization</li>
+                                    <li>Public Opinion and Pressure Groups</li>
+                                    <li>Rule of Law and Separation of Powers</li>
+                                    <li>Electoral Systems and Processes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Notes -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-sticky-note"></i> Key Study Notes</h3>
+                        <div class="notes-container">
+                            <div class="note-card">
+                                <h4>Nigerian Constitution (1999)</h4>
+                                <div class="note-content">
+                                    <p><strong>Key Features:</strong></p>
+                                    <ul>
+                                        <li>Federal system with 36 states and FCT</li>
+                                        <li>Presidential system of government</li>
+                                        <li>Separation of powers (Executive, Legislative, Judicial)</li>
+                                        <li>Fundamental human rights (Chapter IV)</li>
+                                        <li>Directive principles of state policy</li>
+                                    </ul>
+                                    <p><strong>Amendment Process:</strong> Requires 2/3 majority in National Assembly and approval by 2/3 of state assemblies</p>
+                                </div>
+                            </div>
+                            
+                            <div class="note-card">
+                                <h4>Arms of Government</h4>
+                                <div class="note-content">
+                                    <p><strong>Executive:</strong></p>
+                                    <ul>
+                                        <li>President (Head of State and Government)</li>
+                                        <li>Vice President</li>
+                                        <li>Federal Executive Council (Ministers)</li>
+                                        <li>Governors and Deputy Governors (States)</li>
+                                    </ul>
+                                    <p><strong>Legislature:</strong></p>
+                                    <ul>
+                                        <li>National Assembly (Senate + House of Representatives)</li>
+                                        <li>State Houses of Assembly</li>
+                                        <li>Local Government Councils</li>
+                                    </ul>
+                                    <p><strong>Judiciary:</strong></p>
+                                    <ul>
+                                        <li>Supreme Court (Highest court)</li>
+                                        <li>Court of Appeal</li>
+                                        <li>Federal High Court, State High Courts</li>
+                                        <li>Magistrate and Customary Courts</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="note-card">
+                                <h4>Electoral System</h4>
+                                <div class="note-content">
+                                    <p><strong>INEC (Independent National Electoral Commission):</strong></p>
+                                    <ul>
+                                        <li>Conducts federal elections</li>
+                                        <li>Registers political parties</li>
+                                        <li>Voter registration and education</li>
+                                    </ul>
+                                    <p><strong>Election Types:</strong></p>
+                                    <ul>
+                                        <li>Presidential (every 4 years)</li>
+                                        <li>National Assembly (Senate & House of Reps)</li>
+                                        <li>Governorship and State Assembly</li>
+                                        <li>Local Government elections</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Questions -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-question-circle"></i> Practice Questions</h3>
+                        <div class="practice-section">
+                            <div class="question-type">
+                                <h4>WAEC/NECO Style Questions</h4>
+                                <div class="sample-questions">
+                                    <div class="question-item">
+                                        <p><strong>1.</strong> The 1999 Constitution of Nigeria can be amended by</p>
+                                        <div class="options">
+                                            <p>A. Simple majority in National Assembly</p>
+                                            <p>B. Two-thirds majority in National Assembly only</p>
+                                            <p>C. Two-thirds majority in National Assembly and approval by two-thirds of State Assemblies</p>
+                                            <p>D. Referendum by the people</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: C</strong></p>
+                                    </div>
+                                    
+                                    <div class="question-item">
+                                        <p><strong>2.</strong> Which of the following is NOT a feature of federalism?</p>
+                                        <div class="options">
+                                            <p>A. Division of powers between levels of government</p>
+                                            <p>B. Written constitution</p>
+                                            <p>C. Unitary system of government</p>
+                                            <p>D. Independent judiciary</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: C</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question-type">
+                                <h4>JAMB Style Questions</h4>
+                                <div class="sample-questions">
+                                    <div class="question-item">
+                                        <p><strong>1.</strong> The principle of separation of powers was advocated by</p>
+                                        <div class="options">
+                                            <p>A. John Locke</p>
+                                            <p>B. Montesquieu</p>
+                                            <p>C. Thomas Hobbes</p>
+                                            <p>D. Jean Jacques Rousseau</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: B</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exam Tips -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-lightbulb"></i> Exam Success Tips</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Study Strategy</h4>
+                                <ul>
+                                    <li>Create timeline charts for constitutional development</li>
+                                    <li>Compare different systems of government</li>
+                                    <li>Memorize key dates and personalities</li>
+                                    <li>Practice past questions regularly</li>
+                                </ul>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Exam Technique</h4>
+                                <ul>
+                                    <li>Read questions carefully</li>
+                                    <li>Identify key terms and concepts</li>
+                                    <li>Structure essay answers with introduction, body, conclusion</li>
+                                    <li>Use relevant examples and case studies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRS Section -->
+            <div id="crs" class="subject-content">
+                <div class="subject-header">
+                    <h2><i class="fas fa-cross"></i> Christian Religious Studies</h2>
+                    <p>Comprehensive biblical knowledge and Christian principles for external examinations</p>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Curriculum Overview -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-list"></i> Curriculum Overview</h3>
+                        <div class="topic-list">
+                            <div class="topic-category">
+                                <h4>Old Testament Studies</h4>
+                                <ul>
+                                    <li>Creation and the Fall (Genesis 1-3)</li>
+                                    <li>The Patriarchs (Abraham, Isaac, Jacob)</li>
+                                    <li>Moses and the Exodus</li>
+                                    <li>The Ten Commandments</li>
+                                    <li>The Judges and Kings of Israel</li>
+                                    <li>The Prophets and their Messages</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>New Testament Studies</h4>
+                                <ul>
+                                    <li>The Birth and Ministry of Jesus</li>
+                                    <li>The Parables of Jesus</li>
+                                    <li>The Miracles of Jesus</li>
+                                    <li>The Death and Resurrection</li>
+                                    <li>The Early Church (Acts)</li>
+                                    <li>Paul's Letters and Teachings</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>Christian Living</h4>
+                                <ul>
+                                    <li>Christian Virtues and Values</li>
+                                    <li>Prayer and Worship</li>
+                                    <li>Christian Marriage and Family</li>
+                                    <li>Christian and Society</li>
+                                    <li>Stewardship and Service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Notes -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-sticky-note"></i> Key Study Notes</h3>
+                        <div class="notes-container">
+                            <div class="note-card">
+                                <h4>The Ten Commandments (Exodus 20:1-17)</h4>
+                                <div class="note-content">
+                                    <p><strong>First Tablet (Relationship with God):</strong></p>
+                                    <ol>
+                                        <li>No other gods before Me</li>
+                                        <li>No idols or graven images</li>
+                                        <li>Do not take God's name in vain</li>
+                                        <li>Remember the Sabbath day</li>
+                                    </ol>
+                                    <p><strong>Second Tablet (Relationship with Others):</strong></p>
+                                    <ol start="5">
+                                        <li>Honor your father and mother</li>
+                                        <li>Do not murder</li>
+                                        <li>Do not commit adultery</li>
+                                        <li>Do not steal</li>
+                                        <li>Do not bear false witness</li>
+                                        <li>Do not covet</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="note-card">
+                                <h4>The Beatitudes (Matthew 5:3-12)</h4>
+                                <div class="note-content">
+                                    <ul>
+                                        <li>Blessed are the poor in spirit</li>
+                                        <li>Blessed are those who mourn</li>
+                                        <li>Blessed are the meek</li>
+                                        <li>Blessed are those who hunger for righteousness</li>
+                                        <li>Blessed are the merciful</li>
+                                        <li>Blessed are the pure in heart</li>
+                                        <li>Blessed are the peacemakers</li>
+                                        <li>Blessed are those persecuted for righteousness</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="note-card">
+                                <h4>Paul's Missionary Journeys</h4>
+                                <div class="note-content">
+                                    <p><strong>First Journey (Acts 13-14):</strong> Cyprus, Antioch, Iconium, Lystra, Derbe</p>
+                                    <p><strong>Second Journey (Acts 15-18):</strong> Syria, Asia Minor, Macedonia, Greece</p>
+                                    <p><strong>Third Journey (Acts 18-21):</strong> Ephesus, Macedonia, Greece, Jerusalem</p>
+                                    <p><strong>Key Themes:</strong> Salvation by grace, unity in Christ, Christian living</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Questions -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-question-circle"></i> Practice Questions</h3>
+                        <div class="practice-section">
+                            <div class="question-type">
+                                <h4>WAEC/NECO Style Questions</h4>
+                                <div class="sample-questions">
+                                    <div class="question-item">
+                                        <p><strong>1.</strong> "In the beginning was the Word..." This statement is found in</p>
+                                        <div class="options">
+                                            <p>A. Matthew 1:1</p>
+                                            <p>B. Mark 1:1</p>
+                                            <p>C. Luke 1:1</p>
+                                            <p>D. John 1:1</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: D</strong></p>
+                                    </div>
+                                    
+                                    <div class="question-item">
+                                        <p><strong>2.</strong> The first miracle performed by Jesus was</p>
+                                        <div class="options">
+                                            <p>A. Healing the blind man</p>
+                                            <p>B. Turning water into wine</p>
+                                            <p>C. Feeding the five thousand</p>
+                                            <p>D. Walking on water</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: B</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exam Tips -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-lightbulb"></i> Exam Success Tips</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Study Strategy</h4>
+                                <ul>
+                                    <li>Memorize key Bible verses and references</li>
+                                    <li>Understand the context of biblical stories</li>
+                                    <li>Learn the chronological order of events</li>
+                                    <li>Practice relating biblical principles to modern life</li>
+                                </ul>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Exam Technique</h4>
+                                <ul>
+                                    <li>Quote relevant Bible verses in essays</li>
+                                    <li>Explain the moral lessons in biblical stories</li>
+                                    <li>Use proper biblical terminology</li>
+                                    <li>Structure answers with clear examples</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Literature Section -->
+            <div id="literature" class="subject-content">
+                <div class="subject-header">
+                    <h2><i class="fas fa-book"></i> Literature in English</h2>
+                    <p>Master prose, poetry, and drama for external examinations</p>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Curriculum Overview -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-list"></i> Curriculum Overview</h3>
+                        <div class="topic-list">
+                            <div class="topic-category">
+                                <h4>Prose (Novels & Short Stories)</h4>
+                                <ul>
+                                    <li>African Literature (Chinua Achebe, Wole Soyinka)</li>
+                                    <li>British Literature (Shakespeare, Dickens)</li>
+                                    <li>American Literature (Mark Twain, Harper Lee)</li>
+                                    <li>Plot, Character, Setting, Theme Analysis</li>
+                                    <li>Narrative Techniques and Style</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>Poetry</h4>
+                                <ul>
+                                    <li>African Poetry (Gabriel Okara, Kofi Awoonor)</li>
+                                    <li>British Poetry (William Wordsworth, John Keats)</li>
+                                    <li>American Poetry (Robert Frost, Maya Angelou)</li>
+                                    <li>Poetic Devices and Techniques</li>
+                                    <li>Themes and Imagery Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="topic-category">
+                                <h4>Drama</h4>
+                                <ul>
+                                    <li>Shakespearean Plays (Hamlet, Macbeth, Romeo & Juliet)</li>
+                                    <li>African Drama (Wole Soyinka, Ama Ata Aidoo)</li>
+                                    <li>Modern Drama (Arthur Miller, Tennessee Williams)</li>
+                                    <li>Dramatic Elements and Structure</li>
+                                    <li>Character Development and Conflict</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Notes -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-sticky-note"></i> Key Study Notes</h3>
+                        <div class="notes-container">
+                            <div class="note-card">
+                                <h4>Literary Devices</h4>
+                                <div class="note-content">
+                                    <p><strong>Figures of Speech:</strong></p>
+                                    <ul>
+                                        <li><strong>Metaphor:</strong> Direct comparison without "like" or "as"</li>
+                                        <li><strong>Simile:</strong> Comparison using "like" or "as"</li>
+                                        <li><strong>Personification:</strong> Giving human qualities to non-human things</li>
+                                        <li><strong>Alliteration:</strong> Repetition of initial consonant sounds</li>
+                                        <li><strong>Hyperbole:</strong> Deliberate exaggeration</li>
+                                        <li><strong>Irony:</strong> Contrast between expectation and reality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="note-card">
+                                <h4>Poetic Forms</h4>
+                                <div class="note-content">
+                                    <p><strong>Sonnet:</strong> 14-line poem with specific rhyme scheme</p>
+                                    <p><strong>Ballad:</strong> Narrative poem, often set to music</p>
+                                    <p><strong>Ode:</strong> Lyrical poem expressing deep feelings</p>
+                                    <p><strong>Elegy:</strong> Mournful poem, often about death</p>
+                                    <p><strong>Free Verse:</strong> Poetry without regular meter or rhyme</p>
+                                </div>
+                            </div>
+
+                            <div class="note-card">
+                                <h4>Dramatic Elements</h4>
+                                <div class="note-content">
+                                    <p><strong>Plot Structure:</strong></p>
+                                    <ul>
+                                        <li>Exposition (introduction)</li>
+                                        <li>Rising Action (conflict development)</li>
+                                        <li>Climax (turning point)</li>
+                                        <li>Falling Action (resolution begins)</li>
+                                        <li>Denouement (conclusion)</li>
+                                    </ul>
+                                    <p><strong>Types of Drama:</strong> Tragedy, Comedy, History, Romance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Texts -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-books"></i> Recommended Texts</h3>
+                        <div class="texts-grid">
+                            <div class="text-category">
+                                <h4>Prose</h4>
+                                <ul>
+                                    <li>"Things Fall Apart" - Chinua Achebe</li>
+                                    <li>"The Lion and the Jewel" - Wole Soyinka</li>
+                                    <li>"Second Class Citizen" - Buchi Emecheta</li>
+                                    <li>"Animal Farm" - George Orwell</li>
+                                    <li>"Lord of the Flies" - William Golding</li>
+                                </ul>
+                            </div>
+                            <div class="text-category">
+                                <h4>Poetry</h4>
+                                <ul>
+                                    <li>"The Pulley" - George Herbert</li>
+                                    <li>"Bat" - D.H. Lawrence</li>
+                                    <li>"Piano and Drums" - Gabriel Okara</li>
+                                    <li>"The Good Morrow" - John Donne</li>
+                                    <li>"Telephone Conversation" - Wole Soyinka</li>
+                                </ul>
+                            </div>
+                            <div class="text-category">
+                                <h4>Drama</h4>
+                                <ul>
+                                    <li>"Hamlet" - William Shakespeare</li>
+                                    <li>"The Trials of Brother Jero" - Wole Soyinka</li>
+                                    <li>"She Stoops to Conquer" - Oliver Goldsmith</li>
+                                    <li>"Arms and the Man" - George Bernard Shaw</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Questions -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-question-circle"></i> Practice Questions</h3>
+                        <div class="practice-section">
+                            <div class="question-type">
+                                <h4>WAEC/NECO Style Questions</h4>
+                                <div class="sample-questions">
+                                    <div class="question-item">
+                                        <p><strong>1.</strong> In "Things Fall Apart," Okonkwo's tragic flaw is his</p>
+                                        <div class="options">
+                                            <p>A. Laziness</p>
+                                            <p>B. Fear of weakness and failure</p>
+                                            <p>C. Love for his father</p>
+                                            <p>D. Hatred for tradition</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: B</strong></p>
+                                    </div>
+                                    
+                                    <div class="question-item">
+                                        <p><strong>2.</strong> The literary device used in "The wind whispered through the trees" is</p>
+                                        <div class="options">
+                                            <p>A. Metaphor</p>
+                                            <p>B. Simile</p>
+                                            <p>C. Personification</p>
+                                            <p>D. Alliteration</p>
+                                        </div>
+                                        <p class="answer"><strong>Answer: C</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exam Tips -->
+                    <div class="content-section">
+                        <h3><i class="fas fa-lightbulb"></i> Exam Success Tips</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Study Strategy</h4>
+                                <ul>
+                                    <li>Read prescribed texts multiple times</li>
+                                    <li>Analyze characters, themes, and literary devices</li>
+                                    <li>Practice identifying poetic techniques</li>
+                                    <li>Memorize important quotes and their contexts</li>
+                                </ul>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Exam Technique</h4>
+                                <ul>
+                                    <li>Support answers with textual evidence</li>
+                                    <li>Analyze rather than just summarize</li>
+                                    <li>Use appropriate literary terminology</li>
+                                    <li>Structure essays with clear arguments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Your Academic Journey</h3>
+                    <p>Supporting Adeife's dream of becoming an excellent Mass Communication professional.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="masscom.html">Mass Com Studies</a></li>
+                        <li><a href="examprep.html">Exam Prep</a></li>
+                        <li><a href="games.html">Interactive Learning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Made for Adeife's Academic Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="examprep.js"></script>
+</body>
+</html>
